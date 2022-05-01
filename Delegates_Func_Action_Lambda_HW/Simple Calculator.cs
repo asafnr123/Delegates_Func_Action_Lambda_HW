@@ -11,9 +11,9 @@ namespace Delegates_Func_Action_Lambda_HW
 
 
 
-        public int NumberGetter()
+        public double NumberGetter()
         {
-            int userNumber = 0;
+            double userNumber = 0;
             Console.Write("Enter a number: ");
             try
             {
@@ -68,32 +68,32 @@ namespace Delegates_Func_Action_Lambda_HW
         }
 
 
-        public double Calculator(int num1, int num2, int oper)
+        public double Calculator(double num1, double num2, int oper)
         {
             double result = 0;
             switch (oper)
             {
                 case 1:
                     {
-                        Console.WriteLine($"{num1} + {num2} = {num1 + num2}");
+                        Console.WriteLine($"{num1} + {num2}");
                         result = num1 + num2;
                         return result;
                     }
                 case 2:
                     {
-                        Console.WriteLine($"{num1} - {num2} = {num1 - num2}");
+                        Console.WriteLine($"{num1} - {num2}");
                         result = num1 - num2;
                         return result;
                     }
                 case 3:
                     {
-                        Console.WriteLine($"{num1} * {num2} = {num1 * num2}");
+                        Console.WriteLine($"{num1} * {num2}");
                         result = num1 * num2;
                         return result;
                     }
                 case 4:
                     {
-                        Console.WriteLine($"{num1} / {num2} = {num1 / num2}");
+                        Console.WriteLine($"{num1} / {num2}");
                         result = num1 / num2;
                         return result;
                     }
@@ -109,7 +109,7 @@ namespace Delegates_Func_Action_Lambda_HW
 
         public void PrintResultNicely(double result)
         {
-            Console.WriteLine($"**WOW THE RESULT {result}**");
+            Console.WriteLine($"**{result}**");
         }
 
 
